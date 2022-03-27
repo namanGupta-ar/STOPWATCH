@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Serif', serif;
+}
+
+
+
+#outer-div{
+    background-color: #0c0c2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Stopwatch heading */
+#name{
+        font-size: 40px;
+        text-align: center;
+        color: white;
+}
+
+
+/* watch dimensions */
+#container{
+    height: 300px;
+    width : 550px;
+}
+
+
+/* positioning all box of hour,minute,second,millisecond using flex box */
+#units{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+
+#display-time{
+    /* color: white; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.display-time-inner{
+    /* color: white; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+}
+
+.inner-box {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+}
+
+.inner-box span{
+    position: absolute;
+    height: 116px;
+    width: 120px;
+    font-size: 85px;
+    color: white;
+}
+.val{
+    text-align: center;
+    top: 0;
+    background-color: #202020;
+
+}
+.box{
+    border-top: 2px solid rgb(250, 241, 241);
+    text-align: center;
+    top: 122px;
+    background-color: #202020;   
+}
+
+#msec{
+    font-size: 45px;
+    background-color: transparent;
+    padding-top: 60px;
+}
+
+
+/* Classes for animation effects */
+.animate1{
+    transition: all 0.5s;
+    top:-120px;
+}
+
+.animate2{
+        transition : all 0.5s;
+        top : 0px;
+}
+
+#btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#btn button{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 30px;
+    height: 40px;
+    width: 140px;
+    background: #ce9f11;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+}
+
+#btn button:hover{
+    cursor: pointer;
+    background-color: #ffcc00;
+    box-shadow:  0 0 5px #ffcc00,
+                 0 0 20px #ffcc00,
+                 0 0 60px #ffcc00,
+                 0 0 150px #ffcc00;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+
+    <div id="outer-div">
+        <!-- outerdiv for using flex -->
+        <div id="container">
+            <div id="watch">
+                <p id="name">STOPWATCH</p>
+                <div id="units">
+                    <p>Hour</p>
+                    <p>Minute</p>
+                    <p>Second</p>
+                    <p>MilliSecond</p>
+                </div>
+
+                <!-- Display Time -->
+                <div id="display-time">
+                    <div class="display-time-inner">
+                        <div class="inner-box">
+                            <span id="hr" class="val">00</span>
+                            <span id="box1" class="box"></span>
+                            <!-- box is used to animate the counting effect -->
+                        </div>
+                    </div>
+                    <div class="display-time-inner">
+                        <div class="inner-box">
+                            <span id="min" class="val">00</span>
+                            <span id="box2" class="box"></span>
+                        </div>
+                    </div>
+                    <div class="display-time-inner">
+                        <div class="inner-box">
+                            <span id="sec" class="val">00</span>
+                            <span id="box3" class="box"></span>
+                        </div>
+                    </div>
+                    <div class="display-time-inner">
+                        <div class="inner-box">
+                            <span id="msec" class="val">00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Button -->
+            <div id="btn">
+                <button id="start">Start</button>
+                <button id="stop"> Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+
+</body>
+</html>
